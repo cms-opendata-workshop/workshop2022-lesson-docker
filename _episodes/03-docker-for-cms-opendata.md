@@ -331,7 +331,7 @@ docker run -it --name my_root -P -p 5901:5901 -p 6080:6080 -v ${HOME}/cms_open_d
 
 This opens a bash shell where you can type your commands. Edit files in the `cms_open_data_root` directory on your local computer, but run the commands in the container.
 
-For graphics, on native Linux, use X11-forwarding. On other systems, use VNC that is installed in the container and start the graphics windows with `vnc_start`. Open the browser window in the address given at the start message ([http://127.0.0.1:6080/vnc.html](http://127.0.0.1:6080/vnc.html)) with the default VNC password is `cms.cern`. It shows an empty screen to start with and all graphics will pop up there.
+For graphics, on native Linux, use X11-forwarding. On other systems, use VNC that is installed in the container and start the graphics windows with `start_vnc`. Open the browser window in the address given at the start message ([http://127.0.0.1:6080/vnc.html](http://127.0.0.1:6080/vnc.html)) with the default VNC password is `cms.cern`. It shows an empty screen to start with and all graphics will pop up there.
 
 Type `exit` to leave the container, and if you have started VNC, stop it first:
 
